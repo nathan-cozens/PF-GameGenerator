@@ -3,14 +3,14 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
-  getUser: getUser,
-  getUsers: getUsers
+  getCharacter,
+  getCharacters,
 }
 
-function getUsers (db = connection) {
-  return db('users').select()
+function getCharacters (db = connection) {
+  return db('Characters').select()
 }
 
-function getUser (id, db = connection) {
-  return db('users').where('id', id).first()
+function getCharacter (id, db = connection) {
+  return db('characters').where('id', id).first()
 }
