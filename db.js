@@ -8,7 +8,7 @@ module.exports = {
 }
 
 function getCharacters (db = connection) {
-  return db('Characters').select()
+  return db('characters').select()
 }
 
 function getCharacter (id, db = connection) {

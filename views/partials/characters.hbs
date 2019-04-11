@@ -1,0 +1,15 @@
+<title>Character list</title>
+</head>
+{{>navbar}}
+<body>
+<div class="parent-container flexbox" >
+   <div class="container flexbox">
+    <h1>Character list</h1>
+        {{#each character}}
+           <a href='/Character/{{id}}'>{{name}}</a><br>
+        {{/each}}
+    </div> 
+    <div class="container flexbox">
+        
+    </div>
+</div>
