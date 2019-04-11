@@ -5,12 +5,16 @@ exports.up = function(knex, Promise) {
     table.string('name')
     table.string('class')
     table.string('race')
-    table.string('corestats_id')
-    table.string('skills_id')
+    table.string('weight')
+    table.string('gender')
+    table.string('size')
+    table.string('description')
    
   })
 };
 
 exports.down = function(knex, Promise) {
-  
+  return knex.schema.dropTable('characters', () =>{
+
+  })
 };
