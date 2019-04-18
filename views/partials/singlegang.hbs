@@ -1,0 +1,20 @@
+<title>{{gang.name}}</title>
+</head>
+{{>navbar}}
+<body>
+<div class="parent-container flexbox" >
+   <div class="container flexbox color">
+       <div>
+           <h1>Name: {{gang.name}}</h1>
+       </div>
+        <div>
+            {{#each factions}}
+            <a href="/Faction/{{id}}">{{name}}</a><br>
+            {{/each}}
+        </div>
+    
+    
+                    
+    </div> 
+    
+</div>

@@ -1,0 +1,14 @@
+<title>Faction List</title>
+</head>
+{{>navbar}}
+<body>
+<div class="parent-container flexbox" >
+   <div class="container flexbox">
+         <h1>Faction list</h1>
+        {{#each faction}}
+          <div class='' ><a href='/Faction/{{id}}'>{{name}}</a><p>Influence: {{influence}}</p></div> 
+        {{/each}} 
+             
+    </div> 
+    
+</div>

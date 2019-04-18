@@ -1,0 +1,15 @@
+<title>Gang List</title>
+</head>
+{{>navbar}}
+<body>
+<div class="parent-container flexbox" >
+   <div class="container flexbox">
+         <h1>Gang list</h1>
+        {{#each gang}}
+        
+          <div class='' ><a href='/Gang/{{id}}'>{{name}}</a><p>Power: {{power}}</p></div> 
+        {{/each}} 
+             
+    </div> 
+    
+</div>
